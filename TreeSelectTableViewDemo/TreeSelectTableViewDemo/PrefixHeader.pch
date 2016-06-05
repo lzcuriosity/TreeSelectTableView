@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  TreeSelectTableViewDemo
+//
+//  Created by lz on 16/6/3.
+//  Copyright © 2016年 Zen3. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//导航栏字体颜色
+#define navigationButonColor [UIColor colorWithRed:((float) 255 / 255.0f) green:((float) 53 / 255.0f) blue:((float) 85 / 255.0f) alpha:1.0f];
+
+//树形列表背景颜色
+#define tableViewBackgroungColor [UIColor colorWithRed:((float) 250 / 255.0f) green:((float) 250 / 255.0f) blue:((float) 250 / 255.0f) alpha:1.0f];
+
+//判断是否为null 如果为null则返回nil 否则返回原值
+#define GET_OBJECT_OR_NULL(parameter) [parameter isEqual:[NSNull null]]?nil:parameter
+
+//分类的名称
+#define TREENOTE_ATTRIBUTE_NAME_KEY @"name"
+//分类对应的唯一id
+#define TREENOTE_ATTRIBUTE_ID_KEY @"id"
+//是否展开的key值
+#define TREENOTE_ATTRIBUTE_OPENSTATE_KEY @"openState"
+//选中状态key
+#define TREENOTE_ATTRIBUTE_SELECTSTATE_KEY @"selectState"
+//子类别的数量key
+#define TREENOTE_ATTRIBUTE_SUBCOUNT_KEY @"subCount"
+//子类别的id数组 key
+#define TREENOTE_ATTRIBUTE_SUBIDS_KEY @"subIds"
+//父类别的id key
+#define TREENOTE_ATTRIBUTE_PARENTID_KEY @"parentId"
+//数据源的子类别的key值
+#define TREENOTE_DATASOURCE_SUBCATEGORYS_KEY @"subCategory"
+
+#endif /* PrefixHeader_pch */
